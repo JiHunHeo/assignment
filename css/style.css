@@ -1,12 +1,23 @@
+html,
+body {
+    overflow-x: hidden; /* 수평 스크롤 방지 */
+    overflow-y: hidden; /* 수직 스크롤 제어 */
+    height: 100%; /* 전체 높이 설정 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+}
+
 body {
     background-color: #f0f8ff;
     font-family: 'Arial', sans-serif; /* 기본 폰트 스타일 추가 */
     color: #333; /* 기본 텍스트 색상 추가 */
+    position: relative; /* 상대 위치 지정 */
 }
 
 .wrap_box {
     min-width: 250px;
-    max-height: 100vh;
+    max-width: 800px; /* 최대 너비 설정 */
+    max-height: 90vh;
     margin: 15vh auto;
     padding: 50px 20px;
     text-align: center;
