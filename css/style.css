@@ -1,0 +1,183 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif; /* 기본 폰트 스타일 추가 */
+    color: #333; /* 기본 텍스트 색상 추가 */
+}
+
+.wrap_box {
+    min-width: 250px;
+    max-height: 100vh;
+    margin: 15vh auto;
+    padding: 50px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f0f8fd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 박스 쉐도우 추가 */
+    transition: transform 0.3s ease; /* 전환 효과 추가 */
+}
+
+.wrap_box:hover {
+    transform: scale(1.05); /* 호버 시 확대 효과 */
+}
+
+.txt_bd {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cont_list {
+    background-color: #f0f9f9;
+    padding: 10px; /* 패딩 추가 */
+    border-radius: 10px; /* 테두리 반경 추가 */
+}
+
+.cen {
+    margin-top: 10px;
+    background-color: #f0fbf7;
+    padding: 10px; /* 패딩 추가 */
+    border-radius: 10px; /* 테두리 반경 추가 */
+    transition: background-color 0.3s ease; /* 전환 효과 추가 */
+}
+
+.cen:hover {
+    background-color: #e0f7ef; /* 호버 시 배경색 변경 */
+}
+
+/* 반응형 디자인 추가 */
+@media (max-width: 768px) {
+    .wrap_box {
+        padding: 30px 15px;
+        margin: 10vh auto;
+    }
+
+    .txt_bd {
+        font-size: 1em;
+    }
+
+    .cont_list,
+    .cen {
+        padding: 8px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap_box {
+        padding: 20px 10px;
+        margin: 5vh auto;
+    }
+
+    .txt_bd {
+        font-size: 0.9em;
+    }
+
+    .cont_list,
+    .cen {
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif; /* 기본 폰트 스타일 추가 */
+    color: #333; /* 기본 텍스트 색상 추가 */
+}
+
+.wrap_box {
+    min-width: 250px;
+    max-height: 100vh;
+    margin: 15vh auto;
+    padding: 50px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f0f8fd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 박스 쉐도우 추가 */
+    transition: transform 0.3s ease; /* 전환 효과 추가 */
+}
+
+.wrap_box:hover {
+    transform: scale(1.05); /* 호버 시 확대 효과 */
+}
+
+.txt_bd {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cont_list {
+    background-color: #f0f9f9;
+    padding: 10px; /* 패딩 추가 */
+    border-radius: 10px; /* 테두리 반경 추가 */
+}
+
+.cen {
+    margin-top: 10px;
+    background-color: #f0fbf7;
+    padding: 10px; /* 패딩 추가 */
+    border-radius: 10px; /* 테두리 반경 추가 */
+    transition: background-color 0.3s ease; /* 전환 효과 추가 */
+}
+
+.cen:hover {
+    background-color: #e0f7ef; /* 호버 시 배경색 변경 */
+}
+
+/* 반응형 디자인 추가 */
+@media (max-width: 768px) {
+    .wrap_box {
+        padding: 30px 15px;
+        margin: 10vh auto;
+    }
+
+    .txt_bd {
+        font-size: 1em;
+    }
+
+    .cont_list,
+    .cen {
+        padding: 8px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap_box {
+        padding: 20px 10px;
+        margin: 5vh auto;
+    }
+
+    .txt_bd {
+        font-size: 0.9em;
+    }
+
+    .cont_list,
+    .cen {
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.petal {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/petal.png'); /* 꽃잎 이미지 경로 */
+    background-size: cover;
+    opacity: 0;
+    animation: fall linear infinite;
+}
